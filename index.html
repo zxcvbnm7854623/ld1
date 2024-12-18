@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div id="startScreen">
-    <h1>寻宝游戏</h1>
     <button id="startButton">开始游戏</button>
-    <button id="musicButton">播放音乐</button>
   </div>
 
   <div id="gameInterface" style="display: none;">
-    <div id="map"></div>
-    <div id="status"></div>
+    <div id="map" class="grid"></div>
+    <div id="status">游戏开始！</div>
     <button id="restartButton" style="display: none;">重新开始</button>
-  </div>
-
-  <div id="playerInfo">
-    <p>玩家昵称: <span id="playerNickname">游客</span></p>
-    <p>玩家ID: <span id="playerID">加载中...</span></p>
+    <button id="musicButton">播放音乐</button>
   </div>
 
   <script src="main.js"></script>
