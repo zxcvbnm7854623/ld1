@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #startScreen, #gameInterface {
+    margin: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #map {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-gap: 2px;
+    margin: 20px auto;
+    max-width: 270px;
+  }
+  
+  .cell {
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border: 1px solid #ccc;
+  }
+  
+  .cell.player {
+    background-color: lightblue;
+  }
+  
+  .cell.library {
+    background-color: lightgreen;
+  }
+  
+  .cell.treasure {
+    background-color: gold;
+  }
+  
+  .cell.decode {
+    background-color: lightcoral;
+  }
+  
+  #restartButton {
+    padding: 15px 30px;
+    background-color: lightgreen;
+    font-size: 18px;
+  }
+  
+  #playerInfo {
+    font-size: 18px;
+  }
+  
+  #musicButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+  }
+  
