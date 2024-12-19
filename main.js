@@ -67,6 +67,7 @@ class TreasureHuntGame {
         document.getElementById('status').textContent = '找到了一个神秘的箱子...';
         if (this.hasDecoded && this.playerPosition.x === this.treasurePosition.x && this.playerPosition.y === this.treasurePosition.y) {
           document.getElementById('status').textContent = '恭喜! 你找到了传说中的宝藏!';
+          document.getElementById('treasureIcon').style.display = 'block';
           this.gameOver = true;
           document.getElementById('restartButton').style.display = 'block'; // 显示重新开始按钮
         }
