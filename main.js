@@ -207,6 +207,7 @@ document.getElementById('musicButton').addEventListener('click', () => {
   } else {
     backgroundMusic.play();
     document.getElementById('musicButton').textContent = '暂停音乐';
+    backgroundMusic.loop = true; // 设置音乐循环播放
   }
   isMusicPlaying = !isMusicPlaying;
 });
