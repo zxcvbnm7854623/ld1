@@ -1,68 +1,68 @@
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #f0f0f0;
-}
-
-#startButton, #restartButton, #musicButton {
-  padding: 10px 20px;
-  margin: 10px;
-  cursor: pointer;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(5, 60px);
-  grid-template-rows: repeat(5, 60px);
-  gap: 5px;
-  margin: 20px auto;
-  width: 350px;
-}
-
-.cell {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e0e0e0;
-  border: 1px solid #ccc;
-}
-
-.cell.player {
-  background-color: lightgreen;
-}
-
-.cell.library {
-  background-color: lightblue;
-}
-
-.cell.treasure {
-  background-color: gold;
-}
-
-.cell.decode {
-  background-color: pink;
-}
-
-#status {
-  font-size: 18px;
-  margin-top: 20px;
-}
-
-#restartButton {
-  background-color: red;
-  color: white;
-  font-size: 16px;
-}
-
-#musicButton {
-  background-color: lightcoral;
-  color: white;
-  font-size: 16px;
-}
-#treasureIcon {
-  width: 400px; /* 或者你希望的大小 */
-  height: auto; /* 保持图片比例 */
-  margin-top: 20px;
-}
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  #startButton, #restartButton, #musicButton {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 5px;
+    margin: 20px auto;
+    width: 350px;
+  }
+  
+  .cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+  }
+  
+  .cell.player {
+    background-color: lightgreen;
+  }
+  
+  .cell.library {
+    background-color: lightblue;
+  }
+  
+  .cell.treasure {
+    background-color: gold;
+  }
+  
+  .cell.decode {
+    background-color: pink;
+  }
+  
+  #status {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  #restartButton {
+    background-color: red;
+    color: white;
+    font-size: 16px;
+  }
+  
+  #musicButton {
+    background-color: lightcoral;
+    color: white;
+    font-size: 16px;
+  }
+  #treasureIcon {
+    width: 400px; /* 或者你希望的大小 */
+    height: auto; /* 保持图片比例 */
+    margin-top: 20px;
+  }
