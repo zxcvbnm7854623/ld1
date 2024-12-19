@@ -211,3 +211,36 @@ document.getElementById('musicButton').addEventListener('click', () => {
   }
   isMusicPlaying = !isMusicPlaying;
 });
+  // 存储玩家数据到 localStorage
+function savePlayerData() {
+    localStorage.setItem("playerData", JSON.stringify(playerData));
+}
+
+// 获取玩家昵称并存储
+function getPlayerNickname() {
+    const nickname = prompt("请输入您的昵称：", playerData.nickname);
+    if (nickname && nickname.trim() !== "") {
+        playerData.nickname = nickname.trim();
+        savePlayerData();  // 保存到 localStorage
+    }
+}
+
+// 加载玩家历史记录
+function loadGameHistory() {
+    const history = playerData.gameHistory || [];
+    if (history.length > 0) {
+        alert("上次游戏记录：" + history.join(", "));
+    }
+}
+
+// 初始化游戏数据
+let playerData = JSON.parse(localStorage.getItem("playerData")) || {
+    nickname: "游客",
+    gameHistory: [],
+};
+
+// 开始游戏时，加载玩家数据
+document.addEventListener("DOMContentLoaded", function () {
+    loadGameHistory();
+    getPlayerNickname();
+});
